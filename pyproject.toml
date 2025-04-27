@@ -1,0 +1,14 @@
+[project]
+name = "whg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "blinker<1.7",
+    "selenium>=4.31.0",
+    "selenium-wire>=5.1.0",
+    "setuptools>=79.0.1",
+]
+[tool.mypy.overrides]
+"seleniumwire.*" = { ignore_missing_imports = true }
